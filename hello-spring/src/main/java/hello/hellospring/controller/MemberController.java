@@ -9,7 +9,8 @@ public class MemberController {
 
     private final MemberService memberService;
 
-    // bean에 등록된 서비스를 가져오기 위해
+    // Bean에 등록된 memberService를 넣어준다.
+    /* 생성자 주입 */
     @Autowired
     public MemberController(MemberService memberService) {
         this.memberService = memberService;

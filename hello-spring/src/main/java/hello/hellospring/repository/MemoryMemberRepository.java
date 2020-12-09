@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.*;
 
-// bean에 리포를 등록하기 위해
-@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();

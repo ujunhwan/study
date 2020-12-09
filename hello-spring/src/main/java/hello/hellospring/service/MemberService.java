@@ -10,10 +10,14 @@ import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
+// bean에 서비스를 등록하기 위해
+@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
+    // bean에 등록된 리포를 갖고오기 위해
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }

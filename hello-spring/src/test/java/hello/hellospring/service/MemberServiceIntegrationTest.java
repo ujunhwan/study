@@ -16,7 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-// @Transactional -> 테스트 시작 전에 트랜젝션을 실행하고, 테스트를함. 직접 DB에 데이터를 넣지않고 검증 가능
+// @Transactional -> 테스트 시작 전에 직접 DB에 데이터를 넣지않고 검증 가능
 @SpringBootTest
 @Transactional
 public class MemberServiceIntegrationTest {
